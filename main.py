@@ -1,20 +1,23 @@
-# Reverse a string
 
-def reverser(theword):
-    reversed_word= ""       # Why a blank "" ?
-    for index in range(len(theword)-1, -1, -1):  # What is the signifigance of 3 -1's ??
-        reversed_word += theword[index]     # Why += and why [ ]
-    return reversed_word
+import Problem_Solving_1
 
-print(f"Hello Phil reversed is: {reverser('Hello Phil')}")   # Why { } ?    # <-- print() line would not work with '' it needed ""
+Problem_Solving_1.reverser(theword)
+Problem_Solving_1.capitalizing()
+
+
+
 
 
 # Capitalize first letters of each word in a string
 
-import string 
 
-sentence= 'Hello world, my name is phil'
-formatted= string.capwords(sentence, sep= None)
-print(formatted)   
+def capitalizing():
+    string= "Hello world my name is phil!"
+    capital_string= string.title()
+    print(capital_string) 
+    return capital_string
+capitalizing()  
+
+
 
 
