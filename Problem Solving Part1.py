@@ -20,12 +20,16 @@
     #** capwords() function (string.capwords()): converts first letter of every word into uppercase** (Use split() method)
     # upper() function: Takes all lower case letters in a string and turns them to capital letters
     # swapcase() function: Returns string with their opposite casing (uppercase to lower & lower to upper)
+    # Is the solution involving the format() function??
+    # title () function? 
 
-import string 
+def capitalizing():
+    string= "Hello world my name is phil!"
+    capital_string= string.title()
+    print(capital_string) 
+    return capital_string
+capitalizing()  
 
-sentence= 'Hello world, my name is phil'
-formatted= string.capwords(sentence, sep= None)
-print(formatted)    
 
 
 
@@ -33,6 +37,8 @@ print(formatted)
 
 
 # Problem 3: Compress a string of characters
+
+
 
 
 

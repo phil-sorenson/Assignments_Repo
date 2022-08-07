@@ -7,3 +7,14 @@ def reverser(theword):
     return reversed_word
 
 print(f"Hello Phil reversed is: {reverser('Hello Phil')}")   # Why { } ?    # <-- print() line would not work with '' it needed ""
+
+
+# Capitalize first letters of each word in a string
+
+import string 
+
+sentence= 'Hello world, my name is phil'
+formatted= string.capwords(sentence, sep= None)
+print(formatted)   
+
+
